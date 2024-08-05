@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e4c7bcadaeb2f12fd78f7df7b6e1d147 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e4c7bcadaeb2f12fd78f7df7b6e1d147" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e4c7bcadaeb2f12fd78f7df7b6e1d147 = L.map(
+                "map_e4c7bcadaeb2f12fd78f7df7b6e1d147",
+                {
+                    center: [-7.562103587206329, 110.82023046013443],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a6efc17e8b0eaeb42d3b1159a8ae5dc2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a6efc17e8b0eaeb42d3b1159a8ae5dc2.addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var poly_line_a5a9664d162bcb1102af357158ecb4d0 = L.polyline(
+                [[-7.558593, 110.8202], [-7.55838, 110.820715], [-7.558783, 110.820747], [-7.559607, 110.821418], [-7.561489, 110.822051], [-7.562053, 110.822427], [-7.562181, 110.822866], [-7.563095, 110.822539], [-7.563792, 110.82255], [-7.564462, 110.82292], [-7.564643, 110.82318], [-7.564858, 110.822984], [-7.564485, 110.822282], [-7.566059, 110.821434], [-7.564863, 110.818462], [-7.558593, 110.8202]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var marker_29b070035a05c000cc8870dff987d92a = L.marker(
+                [-7.56443, 110.8226271],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_6ffd157e650232521958094c5f841e4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_29b070035a05c000cc8870dff987d92a.setIcon(icon_6ffd157e650232521958094c5f841e4d);
+        
+    
+        var popup_eb97495d26c5d801cc5bdd917c4c94a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3da67403e6829dd911240cd4c41fd40e = $(`<div id="html_3da67403e6829dd911240cd4c41fd40e" style="width: 100.0%; height: 100.0%;">Kafe Biru</div>`)[0];
+                popup_eb97495d26c5d801cc5bdd917c4c94a4.setContent(html_3da67403e6829dd911240cd4c41fd40e);
+            
+        
+
+        marker_29b070035a05c000cc8870dff987d92a.bindPopup(popup_eb97495d26c5d801cc5bdd917c4c94a4)
+        ;
+
+        
+    
+    
+            var marker_f608d105b6d1fdc6e16731db5c4065c5 = L.marker(
+                [-7.562409700000001, 110.8193662],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_d519914f00db0909a0747f8a775f44cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f608d105b6d1fdc6e16731db5c4065c5.setIcon(icon_d519914f00db0909a0747f8a775f44cc);
+        
+    
+        var popup_1e23f6d23735e816435776fb2e39ce36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2bdc1ddfb3a8ae71b32d43a5e974432 = $(`<div id="html_c2bdc1ddfb3a8ae71b32d43a5e974432" style="width: 100.0%; height: 100.0%;">Ayam Siram Teplok</div>`)[0];
+                popup_1e23f6d23735e816435776fb2e39ce36.setContent(html_c2bdc1ddfb3a8ae71b32d43a5e974432);
+            
+        
+
+        marker_f608d105b6d1fdc6e16731db5c4065c5.bindPopup(popup_1e23f6d23735e816435776fb2e39ce36)
+        ;
+
+        
+    
+    
+            var marker_8b1fff8a3cc0253d12c6ca0e80701df8 = L.marker(
+                [-7.563826699999999, 110.8212145],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_e6f62609196012c8dc08b767c0724270 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8b1fff8a3cc0253d12c6ca0e80701df8.setIcon(icon_e6f62609196012c8dc08b767c0724270);
+        
+    
+        var popup_3edc61b231a1afc720cb0dcf8fc03f73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c51fdf8ac24fa12468dab68b0667ba3 = $(`<div id="html_2c51fdf8ac24fa12468dab68b0667ba3" style="width: 100.0%; height: 100.0%;">Waroeng Mbok Marni Totogan</div>`)[0];
+                popup_3edc61b231a1afc720cb0dcf8fc03f73.setContent(html_2c51fdf8ac24fa12468dab68b0667ba3);
+            
+        
+
+        marker_8b1fff8a3cc0253d12c6ca0e80701df8.bindPopup(popup_3edc61b231a1afc720cb0dcf8fc03f73)
+        ;
+
+        
+    
+    
+            var marker_9de76d01d0ffad21f85c16c6e0bcb979 = L.marker(
+                [-7.5645123, 110.8186164],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_64ed3b76e183e75dca6cc24bf966032c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9de76d01d0ffad21f85c16c6e0bcb979.setIcon(icon_64ed3b76e183e75dca6cc24bf966032c);
+        
+    
+        var popup_4864a3c74a1d066240e870c995c836ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43055a7b6d1d4eed3c839752f94e85c6 = $(`<div id="html_43055a7b6d1d4eed3c839752f94e85c6" style="width: 100.0%; height: 100.0%;">Nasi Liwet Bu Amin</div>`)[0];
+                popup_4864a3c74a1d066240e870c995c836ef.setContent(html_43055a7b6d1d4eed3c839752f94e85c6);
+            
+        
+
+        marker_9de76d01d0ffad21f85c16c6e0bcb979.bindPopup(popup_4864a3c74a1d066240e870c995c836ef)
+        ;
+
+        
+    
+    
+            var marker_d22ac11a398f995fe876f8862fb96110 = L.marker(
+                [-7.565610499999998, 110.8205271],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_8a1b299b3ced5f6af435efe853a2d3a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d22ac11a398f995fe876f8862fb96110.setIcon(icon_8a1b299b3ced5f6af435efe853a2d3a7);
+        
+    
+        var popup_c686f3e7b1cdf23aa6b9cc02e8678a24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b2212fdef7fef56e01c61260eea9e7e = $(`<div id="html_7b2212fdef7fef56e01c61260eea9e7e" style="width: 100.0%; height: 100.0%;">Bakso Alex Mangkunegaran</div>`)[0];
+                popup_c686f3e7b1cdf23aa6b9cc02e8678a24.setContent(html_7b2212fdef7fef56e01c61260eea9e7e);
+            
+        
+
+        marker_d22ac11a398f995fe876f8862fb96110.bindPopup(popup_c686f3e7b1cdf23aa6b9cc02e8678a24)
+        ;
+
+        
+    
+    
+            var marker_5e50561efd5cd332bc6aa36291f80ad4 = L.marker(
+                [-7.565636799999999, 110.8205906],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_5b283e12a511923b9b1114d7b57bf4ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5e50561efd5cd332bc6aa36291f80ad4.setIcon(icon_5b283e12a511923b9b1114d7b57bf4ec);
+        
+    
+        var popup_8623e4c9d89291839d6e83cb4ecb760a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a62f0008305976b4bf2e1b80873ff057 = $(`<div id="html_a62f0008305976b4bf2e1b80873ff057" style="width: 100.0%; height: 100.0%;">Poyoo Hottang & Takoyaki</div>`)[0];
+                popup_8623e4c9d89291839d6e83cb4ecb760a.setContent(html_a62f0008305976b4bf2e1b80873ff057);
+            
+        
+
+        marker_5e50561efd5cd332bc6aa36291f80ad4.bindPopup(popup_8623e4c9d89291839d6e83cb4ecb760a)
+        ;
+
+        
+    
+    
+            var marker_2526e90a81a1b8f9e852848c75d7e486 = L.marker(
+                [-7.562410999999998, 110.820232],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_fe24cc6a475df99d3c008ec8d6d84ca2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2526e90a81a1b8f9e852848c75d7e486.setIcon(icon_fe24cc6a475df99d3c008ec8d6d84ca2);
+        
+    
+        var popup_58f2e258becab613fe1b1fcf28b53ef6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81f6ec11f6929fcd7e15e488022a3f3e = $(`<div id="html_81f6ec11f6929fcd7e15e488022a3f3e" style="width: 100.0%; height: 100.0%;">Wedangan Mas Freddy</div>`)[0];
+                popup_58f2e258becab613fe1b1fcf28b53ef6.setContent(html_81f6ec11f6929fcd7e15e488022a3f3e);
+            
+        
+
+        marker_2526e90a81a1b8f9e852848c75d7e486.bindPopup(popup_58f2e258becab613fe1b1fcf28b53ef6)
+        ;
+
+        
+    
+    
+            var marker_06846a0e016af43a85f5293c86d08858 = L.marker(
+                [-7.562410999999998, 110.820232],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_45d468d4ac1a4656a8263ff247e49e48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_06846a0e016af43a85f5293c86d08858.setIcon(icon_45d468d4ac1a4656a8263ff247e49e48);
+        
+    
+        var popup_44b5ab50468d737e7da817c1bf755c1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d8d0c4ff8d7e81d51c034234ca10c12 = $(`<div id="html_1d8d0c4ff8d7e81d51c034234ca10c12" style="width: 100.0%; height: 100.0%;">WARUNG MAKAN ''HEK MAS FREDY''</div>`)[0];
+                popup_44b5ab50468d737e7da817c1bf755c1a.setContent(html_1d8d0c4ff8d7e81d51c034234ca10c12);
+            
+        
+
+        marker_06846a0e016af43a85f5293c86d08858.bindPopup(popup_44b5ab50468d737e7da817c1bf755c1a)
+        ;
+
+        
+    
+    
+            var marker_d9880aa3cbf584404cb5539423eeb3b8 = L.marker(
+                [-7.562584500000001, 110.8202656],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_ea49466e900db6a980a86acea4514e24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d9880aa3cbf584404cb5539423eeb3b8.setIcon(icon_ea49466e900db6a980a86acea4514e24);
+        
+    
+        var popup_4b661f0e9e2b47774314ec93a1f5c70c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0165e48098f60d61986cff90fe4daf47 = $(`<div id="html_0165e48098f60d61986cff90fe4daf47" style="width: 100.0%; height: 100.0%;">Tenda Sambal Bakar</div>`)[0];
+                popup_4b661f0e9e2b47774314ec93a1f5c70c.setContent(html_0165e48098f60d61986cff90fe4daf47);
+            
+        
+
+        marker_d9880aa3cbf584404cb5539423eeb3b8.bindPopup(popup_4b661f0e9e2b47774314ec93a1f5c70c)
+        ;
+
+        
+    
+    
+            var marker_e6b2fb120297c9f7dd6fdaaa58a51d2e = L.marker(
+                [-7.562621699999999, 110.8203539],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_6be39632052929849107d32542f58577 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e6b2fb120297c9f7dd6fdaaa58a51d2e.setIcon(icon_6be39632052929849107d32542f58577);
+        
+    
+        var popup_c50d4081edc8a91ac98c4b77d548bb91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_714dff0ad788db3b0ae1d86108bf7bcb = $(`<div id="html_714dff0ad788db3b0ae1d86108bf7bcb" style="width: 100.0%; height: 100.0%;">KEDAI JAYA BAHAGIA</div>`)[0];
+                popup_c50d4081edc8a91ac98c4b77d548bb91.setContent(html_714dff0ad788db3b0ae1d86108bf7bcb);
+            
+        
+
+        marker_e6b2fb120297c9f7dd6fdaaa58a51d2e.bindPopup(popup_c50d4081edc8a91ac98c4b77d548bb91)
+        ;
+
+        
+    
+    
+            var marker_5ddc4c4d52c74661459c8a96709c3e82 = L.marker(
+                [-7.562637099999999, 110.8203947],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_5fd1369ab9cd2492efc1a7a2d76c983d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5ddc4c4d52c74661459c8a96709c3e82.setIcon(icon_5fd1369ab9cd2492efc1a7a2d76c983d);
+        
+    
+        var popup_4bf70fffb8285b81b8895ebc5161ec3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_542ab616917956af9a19c90e0bbf3f86 = $(`<div id="html_542ab616917956af9a19c90e0bbf3f86" style="width: 100.0%; height: 100.0%;">Ketoprak Jakarta Brebes City</div>`)[0];
+                popup_4bf70fffb8285b81b8895ebc5161ec3f.setContent(html_542ab616917956af9a19c90e0bbf3f86);
+            
+        
+
+        marker_5ddc4c4d52c74661459c8a96709c3e82.bindPopup(popup_4bf70fffb8285b81b8895ebc5161ec3f)
+        ;
+
+        
+    
+    
+            var marker_95b75e99592ba0d4954affaf41898341 = L.marker(
+                [-7.5625934, 110.819963],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_6d70f4309ccb6cd84f97c51365c6f928 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_95b75e99592ba0d4954affaf41898341.setIcon(icon_6d70f4309ccb6cd84f97c51365c6f928);
+        
+    
+        var popup_37ffafa5cf20c3bed437e350e93128c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebc40ed8e95e3965726fd92561824a8d = $(`<div id="html_ebc40ed8e95e3965726fd92561824a8d" style="width: 100.0%; height: 100.0%;">Kerang Masak 71</div>`)[0];
+                popup_37ffafa5cf20c3bed437e350e93128c6.setContent(html_ebc40ed8e95e3965726fd92561824a8d);
+            
+        
+
+        marker_95b75e99592ba0d4954affaf41898341.bindPopup(popup_37ffafa5cf20c3bed437e350e93128c6)
+        ;
+
+        
+    
+    
+            var marker_533ed098dda0ab3d10dde7be2d588afe = L.marker(
+                [-7.5618373, 110.8208074],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_7083610d43fb6430f5070ffe09f528f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_533ed098dda0ab3d10dde7be2d588afe.setIcon(icon_7083610d43fb6430f5070ffe09f528f4);
+        
+    
+        var popup_810f5a9e5662d9bbcd03d60e2ab4506c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20fe8c9fb63f047bc9c36f59fc5de9d4 = $(`<div id="html_20fe8c9fb63f047bc9c36f59fc5de9d4" style="width: 100.0%; height: 100.0%;">Kedaton Sumber Hidangan Solo</div>`)[0];
+                popup_810f5a9e5662d9bbcd03d60e2ab4506c.setContent(html_20fe8c9fb63f047bc9c36f59fc5de9d4);
+            
+        
+
+        marker_533ed098dda0ab3d10dde7be2d588afe.bindPopup(popup_810f5a9e5662d9bbcd03d60e2ab4506c)
+        ;
+
+        
+    
+    
+            var marker_acddebd02e84dc5824ab72790cc6059e = L.marker(
+                [-7.562845, 110.8202804],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_cfa87219e4a673a84ba14aabfb58168d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_acddebd02e84dc5824ab72790cc6059e.setIcon(icon_cfa87219e4a673a84ba14aabfb58168d);
+        
+    
+        var popup_8b85a19c2630f9bc756f0ea6b913b767 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ae3e1b2aa0682049b55db5daa7ed920 = $(`<div id="html_4ae3e1b2aa0682049b55db5daa7ed920" style="width: 100.0%; height: 100.0%;">Warung Makan Gudangan Trancam - Bu Nah</div>`)[0];
+                popup_8b85a19c2630f9bc756f0ea6b913b767.setContent(html_4ae3e1b2aa0682049b55db5daa7ed920);
+            
+        
+
+        marker_acddebd02e84dc5824ab72790cc6059e.bindPopup(popup_8b85a19c2630f9bc756f0ea6b913b767)
+        ;
+
+        
+    
+    
+            var marker_b6e003286333bb4ad3e98af5495329f3 = L.marker(
+                [-7.561338, 110.8205299],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_2397145ce445175dc4d26f8e7edd924c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b6e003286333bb4ad3e98af5495329f3.setIcon(icon_2397145ce445175dc4d26f8e7edd924c);
+        
+    
+        var popup_6713a06e2531cc871a2be483399e9b5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b53d1a084437ffc6f03009338ce253d = $(`<div id="html_6b53d1a084437ffc6f03009338ce253d" style="width: 100.0%; height: 100.0%;">Insan Bakmi Solo</div>`)[0];
+                popup_6713a06e2531cc871a2be483399e9b5d.setContent(html_6b53d1a084437ffc6f03009338ce253d);
+            
+        
+
+        marker_b6e003286333bb4ad3e98af5495329f3.bindPopup(popup_6713a06e2531cc871a2be483399e9b5d)
+        ;
+
+        
+    
+    
+            var marker_c8a95071ea7be92185baea98dd95b969 = L.marker(
+                [-7.5613185, 110.8205395],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_49b6d9d22e4270d3a705a6abf25ec931 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c8a95071ea7be92185baea98dd95b969.setIcon(icon_49b6d9d22e4270d3a705a6abf25ec931);
+        
+    
+        var popup_f740a53f10bb78c033a2566c8473b210 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf3d3340e402dd566746576bbe859559 = $(`<div id="html_bf3d3340e402dd566746576bbe859559" style="width: 100.0%; height: 100.0%;">Zuppa Soup Kak Ayu</div>`)[0];
+                popup_f740a53f10bb78c033a2566c8473b210.setContent(html_bf3d3340e402dd566746576bbe859559);
+            
+        
+
+        marker_c8a95071ea7be92185baea98dd95b969.bindPopup(popup_f740a53f10bb78c033a2566c8473b210)
+        ;
+
+        
+    
+    
+            var marker_c860ae6f9d94da4c715c24ff74d9f28a = L.marker(
+                [-7.562926300000001, 110.8203718],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_4ef835721dcf8b502a5604f64d775fda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c860ae6f9d94da4c715c24ff74d9f28a.setIcon(icon_4ef835721dcf8b502a5604f64d775fda);
+        
+    
+        var popup_d3f82b1fb09e1044747271bf7e545d16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3222541cbe6ce02c60ae8f48704ad730 = $(`<div id="html_3222541cbe6ce02c60ae8f48704ad730" style="width: 100.0%; height: 100.0%;">Sop SAREH Mangkunegaran ( RM. Said )</div>`)[0];
+                popup_d3f82b1fb09e1044747271bf7e545d16.setContent(html_3222541cbe6ce02c60ae8f48704ad730);
+            
+        
+
+        marker_c860ae6f9d94da4c715c24ff74d9f28a.bindPopup(popup_d3f82b1fb09e1044747271bf7e545d16)
+        ;
+
+        
+    
+    
+            var marker_9a90546cce8fabf7d5bd50b50660eb29 = L.marker(
+                [-7.561550199999999, 110.8195701],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_602729043e7cb64158be8ebf7c235b65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9a90546cce8fabf7d5bd50b50660eb29.setIcon(icon_602729043e7cb64158be8ebf7c235b65);
+        
+    
+        var popup_27632b5e05bd03a3023d8317608782c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f09d1dafc9382d4316e902e25b3726a9 = $(`<div id="html_f09d1dafc9382d4316e902e25b3726a9" style="width: 100.0%; height: 100.0%;">Kebon Daun</div>`)[0];
+                popup_27632b5e05bd03a3023d8317608782c5.setContent(html_f09d1dafc9382d4316e902e25b3726a9);
+            
+        
+
+        marker_9a90546cce8fabf7d5bd50b50660eb29.bindPopup(popup_27632b5e05bd03a3023d8317608782c5)
+        ;
+
+        
+    
+    
+            var marker_b2c70b7ca1034e5a144d8ec67a64ce57 = L.marker(
+                [-7.562687800000001, 110.8209892],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_c36289c1fffada4db2af24f68aab3289 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b2c70b7ca1034e5a144d8ec67a64ce57.setIcon(icon_c36289c1fffada4db2af24f68aab3289);
+        
+    
+        var popup_175f82ee7f5b51a12a12c3e3f0ccf18f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b7557ddf8cc680286ba3390d405e5e7 = $(`<div id="html_8b7557ddf8cc680286ba3390d405e5e7" style="width: 100.0%; height: 100.0%;">Kroket Solo Sinten</div>`)[0];
+                popup_175f82ee7f5b51a12a12c3e3f0ccf18f.setContent(html_8b7557ddf8cc680286ba3390d405e5e7);
+            
+        
+
+        marker_b2c70b7ca1034e5a144d8ec67a64ce57.bindPopup(popup_175f82ee7f5b51a12a12c3e3f0ccf18f)
+        ;
+
+        
+    
+    
+            var marker_3df112936ed0fd8960de4c3d40d17cb8 = L.marker(
+                [-7.5624594, 110.8211304],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_08765e07e2d78008f59bc33cd663ca72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3df112936ed0fd8960de4c3d40d17cb8.setIcon(icon_08765e07e2d78008f59bc33cd663ca72);
+        
+    
+        var popup_457f2c3a463ff299a133a9ad781b17d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8280fd387711846e30355b4ce0ae142 = $(`<div id="html_f8280fd387711846e30355b4ce0ae142" style="width: 100.0%; height: 100.0%;">Dinos Bite</div>`)[0];
+                popup_457f2c3a463ff299a133a9ad781b17d0.setContent(html_f8280fd387711846e30355b4ce0ae142);
+            
+        
+
+        marker_3df112936ed0fd8960de4c3d40d17cb8.bindPopup(popup_457f2c3a463ff299a133a9ad781b17d0)
+        ;
+
+        
+    
+    
+            var marker_f1fecec889ffb6c500fad68332c11a08 = L.marker(
+                [-7.562599499999997, 110.8193854],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_95e783179c3baed2c33de3eb455f92bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f1fecec889ffb6c500fad68332c11a08.setIcon(icon_95e783179c3baed2c33de3eb455f92bb);
+        
+    
+        var popup_10338d4bc796daa1e36715e089e328aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09354a99059628c26803daee5a1088ae = $(`<div id="html_09354a99059628c26803daee5a1088ae" style="width: 100.0%; height: 100.0%;">Rokupang Solo</div>`)[0];
+                popup_10338d4bc796daa1e36715e089e328aa.setContent(html_09354a99059628c26803daee5a1088ae);
+            
+        
+
+        marker_f1fecec889ffb6c500fad68332c11a08.bindPopup(popup_10338d4bc796daa1e36715e089e328aa)
+        ;
+
+        
+    
+    
+            var marker_eb93c641c88a9476f7f367e75c0a1eb1 = L.marker(
+                [-7.5611491, 110.8196191],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_ae32b96c8b865f078c97f48210c1c9b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eb93c641c88a9476f7f367e75c0a1eb1.setIcon(icon_ae32b96c8b865f078c97f48210c1c9b7);
+        
+    
+        var popup_3f37ce88c0c8c2074aa6be66b347c1d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da544adf9604d311c59cbcdf7eefdcb3 = $(`<div id="html_da544adf9604d311c59cbcdf7eefdcb3" style="width: 100.0%; height: 100.0%;">Pecel Ndeso Yu Suti</div>`)[0];
+                popup_3f37ce88c0c8c2074aa6be66b347c1d1.setContent(html_da544adf9604d311c59cbcdf7eefdcb3);
+            
+        
+
+        marker_eb93c641c88a9476f7f367e75c0a1eb1.bindPopup(popup_3f37ce88c0c8c2074aa6be66b347c1d1)
+        ;
+
+        
+    
+    
+            var marker_6bc3eefe4648ff5d244cd2a527ec4230 = L.marker(
+                [-7.562558400000001, 110.8191847],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_75851e60d8f59e994dfafce72a74f91c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6bc3eefe4648ff5d244cd2a527ec4230.setIcon(icon_75851e60d8f59e994dfafce72a74f91c);
+        
+    
+        var popup_31c4fe9d1dcabea35e548064cb7834a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0992619808e6fc4e7430325640b581c = $(`<div id="html_f0992619808e6fc4e7430325640b581c" style="width: 100.0%; height: 100.0%;">Serabi Noto Tuman P Eko Cabang 1</div>`)[0];
+                popup_31c4fe9d1dcabea35e548064cb7834a3.setContent(html_f0992619808e6fc4e7430325640b581c);
+            
+        
+
+        marker_6bc3eefe4648ff5d244cd2a527ec4230.bindPopup(popup_31c4fe9d1dcabea35e548064cb7834a3)
+        ;
+
+        
+    
+    
+            var marker_5fa7148ddbff23952a327431603a562d = L.marker(
+                [-7.562564000000001, 110.819183],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_79b5b22b661afb83c105641a9e83ae77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5fa7148ddbff23952a327431603a562d.setIcon(icon_79b5b22b661afb83c105641a9e83ae77);
+        
+    
+        var popup_9ed6a155e5d459b0a16d9096e77b5b17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7540581adeeeb19a4c1e946117ff9e37 = $(`<div id="html_7540581adeeeb19a4c1e946117ff9e37" style="width: 100.0%; height: 100.0%;">Bakmi Berkah Pak Bo</div>`)[0];
+                popup_9ed6a155e5d459b0a16d9096e77b5b17.setContent(html_7540581adeeeb19a4c1e946117ff9e37);
+            
+        
+
+        marker_5fa7148ddbff23952a327431603a562d.bindPopup(popup_9ed6a155e5d459b0a16d9096e77b5b17)
+        ;
+
+        
+    
+    
+            var marker_c026fb56971d2966cd2b7e9bcd4d021b = L.marker(
+                [-7.561071, 110.8196486],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_0b7bdc0ec5886d7c25048320c9d6b814 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c026fb56971d2966cd2b7e9bcd4d021b.setIcon(icon_0b7bdc0ec5886d7c25048320c9d6b814);
+        
+    
+        var popup_1777645ee451492ceb8a1a4c21f0f20c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3781adc1f828deb2ebc6f628ec21239f = $(`<div id="html_3781adc1f828deb2ebc6f628ec21239f" style="width: 100.0%; height: 100.0%;">AYAM GEPREK SUMO4D</div>`)[0];
+                popup_1777645ee451492ceb8a1a4c21f0f20c.setContent(html_3781adc1f828deb2ebc6f628ec21239f);
+            
+        
+
+        marker_c026fb56971d2966cd2b7e9bcd4d021b.bindPopup(popup_1777645ee451492ceb8a1a4c21f0f20c)
+        ;
+
+        
+    
+    
+            var marker_5175ae5d5faa4ef6a8864b33e4f89cca = L.marker(
+                [-7.563325300000001, 110.820012],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_323256cba0c4a76959af27135796abcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5175ae5d5faa4ef6a8864b33e4f89cca.setIcon(icon_323256cba0c4a76959af27135796abcc);
+        
+    
+        var popup_6b0ccf5fe2c223655faac6458275bb1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_994dbe510495f4315f8f4afe010b2d6c = $(`<div id="html_994dbe510495f4315f8f4afe010b2d6c" style="width: 100.0%; height: 100.0%;">Ayam Goreng Kremes Maestro Ayam GorengNya Wong Solo</div>`)[0];
+                popup_6b0ccf5fe2c223655faac6458275bb1f.setContent(html_994dbe510495f4315f8f4afe010b2d6c);
+            
+        
+
+        marker_5175ae5d5faa4ef6a8864b33e4f89cca.bindPopup(popup_6b0ccf5fe2c223655faac6458275bb1f)
+        ;
+
+        
+    
+    
+            var marker_76c6b1fa7dd8638f79a83f6d03b33e3e = L.marker(
+                [-7.563232499999999, 110.8208866],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_1526949d83f16b93c043e4ef35bae234 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_76c6b1fa7dd8638f79a83f6d03b33e3e.setIcon(icon_1526949d83f16b93c043e4ef35bae234);
+        
+    
+        var popup_e45be56a00f5659c2fb92de36f40a441 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e3f1bc46633304e9361a583a38be9a7 = $(`<div id="html_9e3f1bc46633304e9361a583a38be9a7" style="width: 100.0%; height: 100.0%;">Mak Djan</div>`)[0];
+                popup_e45be56a00f5659c2fb92de36f40a441.setContent(html_9e3f1bc46633304e9361a583a38be9a7);
+            
+        
+
+        marker_76c6b1fa7dd8638f79a83f6d03b33e3e.bindPopup(popup_e45be56a00f5659c2fb92de36f40a441)
+        ;
+
+        
+    
+    
+            var marker_1213a7db80a43accb641de6b43d0fdb0 = L.marker(
+                [-7.562387699999998, 110.82155],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_9c24c510570b5de673a39a5007bc9a0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1213a7db80a43accb641de6b43d0fdb0.setIcon(icon_9c24c510570b5de673a39a5007bc9a0f);
+        
+    
+        var popup_e5f0cec53219e72978fc320eaf1078c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_928051ed6033dd3340f9ac0542a198f3 = $(`<div id="html_928051ed6033dd3340f9ac0542a198f3" style="width: 100.0%; height: 100.0%;">Warung Gendar Pecel Mak Sam</div>`)[0];
+                popup_e5f0cec53219e72978fc320eaf1078c3.setContent(html_928051ed6033dd3340f9ac0542a198f3);
+            
+        
+
+        marker_1213a7db80a43accb641de6b43d0fdb0.bindPopup(popup_e5f0cec53219e72978fc320eaf1078c3)
+        ;
+
+        
+    
+    
+            var marker_9e408659a46c37bddbb62cc78e1b4c73 = L.marker(
+                [-7.562465799999999, 110.8201761],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_ead57a9ee9e92be31d7d447cccf31e74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9e408659a46c37bddbb62cc78e1b4c73.setIcon(icon_ead57a9ee9e92be31d7d447cccf31e74);
+        
+    
+        var popup_294f445e2e2b67a6942fec4fb7769ca8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ce98ba2e65995e7c3839b34ccfb06e6 = $(`<div id="html_1ce98ba2e65995e7c3839b34ccfb06e6" style="width: 100.0%; height: 100.0%;">Wedangan Si Jo</div>`)[0];
+                popup_294f445e2e2b67a6942fec4fb7769ca8.setContent(html_1ce98ba2e65995e7c3839b34ccfb06e6);
+            
+        
+
+        marker_9e408659a46c37bddbb62cc78e1b4c73.bindPopup(popup_294f445e2e2b67a6942fec4fb7769ca8)
+        ;
+
+        
+    
+    
+            var marker_e911cc8fbd11700ad8f5b898efdb6f76 = L.marker(
+                [-7.5630032, 110.8193526],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_01d450be5470ace83fce65b7e1eabab0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e911cc8fbd11700ad8f5b898efdb6f76.setIcon(icon_01d450be5470ace83fce65b7e1eabab0);
+        
+    
+        var popup_4dd66b3e130dab2453ef6b38a96aa27a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_215699ab71843d822b3a9aa842f4f397 = $(`<div id="html_215699ab71843d822b3a9aa842f4f397" style="width: 100.0%; height: 100.0%;">Warung Hik Santuy Tuman</div>`)[0];
+                popup_4dd66b3e130dab2453ef6b38a96aa27a.setContent(html_215699ab71843d822b3a9aa842f4f397);
+            
+        
+
+        marker_e911cc8fbd11700ad8f5b898efdb6f76.bindPopup(popup_4dd66b3e130dab2453ef6b38a96aa27a)
+        ;
+
+        
+    
+    
+            var marker_77ec8d8ac02556d319e428265422a47d = L.marker(
+                [-7.563015699999998, 110.8192973],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_6045ac02fac7c98088cf9f195ec8e2ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_77ec8d8ac02556d319e428265422a47d.setIcon(icon_6045ac02fac7c98088cf9f195ec8e2ea);
+        
+    
+        var popup_7c21758bbfd97932f5b83819d229c49e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1815391bf1f5b2a55e441e083395eed7 = $(`<div id="html_1815391bf1f5b2a55e441e083395eed7" style="width: 100.0%; height: 100.0%;">De Omahkoe Cafe</div>`)[0];
+                popup_7c21758bbfd97932f5b83819d229c49e.setContent(html_1815391bf1f5b2a55e441e083395eed7);
+            
+        
+
+        marker_77ec8d8ac02556d319e428265422a47d.bindPopup(popup_7c21758bbfd97932f5b83819d229c49e)
+        ;
+
+        
+    
+    
+            var marker_672eeb22c9e6340eb0101df37a8a30a1 = L.marker(
+                [-7.5631507, 110.8212076],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_e02e4f12a5dca6267b0586a8b351ccc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_672eeb22c9e6340eb0101df37a8a30a1.setIcon(icon_e02e4f12a5dca6267b0586a8b351ccc7);
+        
+    
+        var popup_4e017dc6a29f2cf7786aad9d408291c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c362c83fd8a10f29b39dabace2b08c7 = $(`<div id="html_5c362c83fd8a10f29b39dabace2b08c7" style="width: 100.0%; height: 100.0%;">The Hidden Swargi Coffee Roastery</div>`)[0];
+                popup_4e017dc6a29f2cf7786aad9d408291c5.setContent(html_5c362c83fd8a10f29b39dabace2b08c7);
+            
+        
+
+        marker_672eeb22c9e6340eb0101df37a8a30a1.bindPopup(popup_4e017dc6a29f2cf7786aad9d408291c5)
+        ;
+
+        
+    
+    
+            var marker_b1a47bb0cc2e2dc6070368103b27781f = L.marker(
+                [-7.5617147, 110.821654],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_ba92dc60636003e0a9e8d10c61add86b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b1a47bb0cc2e2dc6070368103b27781f.setIcon(icon_ba92dc60636003e0a9e8d10c61add86b);
+        
+    
+        var popup_420a384d614ac6c46d4aed43dc681ffc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e9b68a30c27c7650a8e3d52129bab29 = $(`<div id="html_0e9b68a30c27c7650a8e3d52129bab29" style="width: 100.0%; height: 100.0%;">BERTEMU COFFEE & MEALS</div>`)[0];
+                popup_420a384d614ac6c46d4aed43dc681ffc.setContent(html_0e9b68a30c27c7650a8e3d52129bab29);
+            
+        
+
+        marker_b1a47bb0cc2e2dc6070368103b27781f.bindPopup(popup_420a384d614ac6c46d4aed43dc681ffc)
+        ;
+
+        
+    
+    
+            var marker_64387fad12186f17087343dd7fca3749 = L.marker(
+                [-7.5635958, 110.8219554],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_b45679af79048a27471fc2e96e4f899a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_64387fad12186f17087343dd7fca3749.setIcon(icon_b45679af79048a27471fc2e96e4f899a);
+        
+    
+        var popup_5c91fde588ffee98645641e8ebf376d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9b6af0e8fb42ff0f5982194fbc3b7cb = $(`<div id="html_c9b6af0e8fb42ff0f5982194fbc3b7cb" style="width: 100.0%; height: 100.0%;">Warung mbayune fitri</div>`)[0];
+                popup_5c91fde588ffee98645641e8ebf376d7.setContent(html_c9b6af0e8fb42ff0f5982194fbc3b7cb);
+            
+        
+
+        marker_64387fad12186f17087343dd7fca3749.bindPopup(popup_5c91fde588ffee98645641e8ebf376d7)
+        ;
+
+        
+    
+    
+            var marker_ce4d2428df7ce5589abe84493d848565 = L.marker(
+                [-7.5645967, 110.8199585],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_78339ce4d5c603d669a18f17ac97aae0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ce4d2428df7ce5589abe84493d848565.setIcon(icon_78339ce4d5c603d669a18f17ac97aae0);
+        
+    
+        var popup_d72ea87d7cc9d071eb8b8254b63f8aa7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efdc2742edc82b5a3506d31d5b7a55cb = $(`<div id="html_efdc2742edc82b5a3506d31d5b7a55cb" style="width: 100.0%; height: 100.0%;">Menuk Cigarettes Store</div>`)[0];
+                popup_d72ea87d7cc9d071eb8b8254b63f8aa7.setContent(html_efdc2742edc82b5a3506d31d5b7a55cb);
+            
+        
+
+        marker_ce4d2428df7ce5589abe84493d848565.bindPopup(popup_d72ea87d7cc9d071eb8b8254b63f8aa7)
+        ;
+
+        
+    
+    
+            var marker_4d3f6e25aad3eb4db62e8a1e4f8d6fa9 = L.marker(
+                [-7.559380399999999, 110.8211416],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_dfe180494d06342c7fa5fbf642e2180b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4d3f6e25aad3eb4db62e8a1e4f8d6fa9.setIcon(icon_dfe180494d06342c7fa5fbf642e2180b);
+        
+    
+        var popup_edf1c93a7215a7ca1ca8856e7bd64323 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7e5a19a9c6eb18a05e4bb8dc1f565f7 = $(`<div id="html_d7e5a19a9c6eb18a05e4bb8dc1f565f7" style="width: 100.0%; height: 100.0%;">Hello It’s Mie</div>`)[0];
+                popup_edf1c93a7215a7ca1ca8856e7bd64323.setContent(html_d7e5a19a9c6eb18a05e4bb8dc1f565f7);
+            
+        
+
+        marker_4d3f6e25aad3eb4db62e8a1e4f8d6fa9.bindPopup(popup_edf1c93a7215a7ca1ca8856e7bd64323)
+        ;
+
+        
+    
+    
+            var marker_5d85822a75ebdf381cc77a37a90f39f4 = L.marker(
+                [-7.559380399999999, 110.8211416],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_f566693f39c3bcfbb846e0eb10fd84c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5d85822a75ebdf381cc77a37a90f39f4.setIcon(icon_f566693f39c3bcfbb846e0eb10fd84c6);
+        
+    
+        var popup_c2e24384f46dbf80d86258e9a01823da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c8e4a2a6af26e6659de0c43078fc456 = $(`<div id="html_6c8e4a2a6af26e6659de0c43078fc456" style="width: 100.0%; height: 100.0%;">Le Moel</div>`)[0];
+                popup_c2e24384f46dbf80d86258e9a01823da.setContent(html_6c8e4a2a6af26e6659de0c43078fc456);
+            
+        
+
+        marker_5d85822a75ebdf381cc77a37a90f39f4.bindPopup(popup_c2e24384f46dbf80d86258e9a01823da)
+        ;
+
+        
+    
+    
+            var marker_b046f1b2cbbb6c1d9d79cb5caad0e15f = L.marker(
+                [-7.564657000000002, 110.818985],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_1633f1af671d655ec2e6152edbc24eb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b046f1b2cbbb6c1d9d79cb5caad0e15f.setIcon(icon_1633f1af671d655ec2e6152edbc24eb2);
+        
+    
+        var popup_0d7d228bd2e04c9ee1bd1ba9bccd4741 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f455d990939fe9a7103d927608fd3af5 = $(`<div id="html_f455d990939fe9a7103d927608fd3af5" style="width: 100.0%; height: 100.0%;">Es Dawet Telasih "Bu Dermi" Cabang Pasar Gedhe</div>`)[0];
+                popup_0d7d228bd2e04c9ee1bd1ba9bccd4741.setContent(html_f455d990939fe9a7103d927608fd3af5);
+            
+        
+
+        marker_b046f1b2cbbb6c1d9d79cb5caad0e15f.bindPopup(popup_0d7d228bd2e04c9ee1bd1ba9bccd4741)
+        ;
+
+        
+    
+    
+            var marker_40572203083b3be3d22632b6ca49d645 = L.marker(
+                [-7.564962100000001, 110.8192444],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_81bccccf00ba2c29b563e68129d5ea80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_40572203083b3be3d22632b6ca49d645.setIcon(icon_81bccccf00ba2c29b563e68129d5ea80);
+        
+    
+        var popup_3b17579f106532568bbf677e9b35009a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25dc6555a4cf6514d24dfb6dc3e78416 = $(`<div id="html_25dc6555a4cf6514d24dfb6dc3e78416" style="width: 100.0%; height: 100.0%;">Wedangan Oemah Susu Murni</div>`)[0];
+                popup_3b17579f106532568bbf677e9b35009a.setContent(html_25dc6555a4cf6514d24dfb6dc3e78416);
+            
+        
+
+        marker_40572203083b3be3d22632b6ca49d645.bindPopup(popup_3b17579f106532568bbf677e9b35009a)
+        ;
+
+        
+    
+    
+            var marker_8efb786dbab73b8efc2c10308c2939c6 = L.marker(
+                [-7.5649196, 110.8189928],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_a60827bc54b591fc16e6a2c25613c798 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8efb786dbab73b8efc2c10308c2939c6.setIcon(icon_a60827bc54b591fc16e6a2c25613c798);
+        
+    
+        var popup_ea5b2bf984fac509cfd562549c529021 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9d4361e45a6136acaae01174c64ad33 = $(`<div id="html_a9d4361e45a6136acaae01174c64ad33" style="width: 100.0%; height: 100.0%;">J Kopi</div>`)[0];
+                popup_ea5b2bf984fac509cfd562549c529021.setContent(html_a9d4361e45a6136acaae01174c64ad33);
+            
+        
+
+        marker_8efb786dbab73b8efc2c10308c2939c6.bindPopup(popup_ea5b2bf984fac509cfd562549c529021)
+        ;
+
+        
+    
+    
+            var marker_16de725fc39bd4e217454dd22b5eee2a = L.marker(
+                [-7.5646138, 110.822685],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_90e6389dbd50ee464a18fbecc8669ad8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_16de725fc39bd4e217454dd22b5eee2a.setIcon(icon_90e6389dbd50ee464a18fbecc8669ad8);
+        
+    
+        var popup_e7c60e9b7c0d939baf1fdd1772baec4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ba43806461637f4f6c94adf9fb099e2 = $(`<div id="html_3ba43806461637f4f6c94adf9fb099e2" style="width: 100.0%; height: 100.0%;">Belikopi. Mangkunegaran</div>`)[0];
+                popup_e7c60e9b7c0d939baf1fdd1772baec4d.setContent(html_3ba43806461637f4f6c94adf9fb099e2);
+            
+        
+
+        marker_16de725fc39bd4e217454dd22b5eee2a.bindPopup(popup_e7c60e9b7c0d939baf1fdd1772baec4d)
+        ;
+
+        
+    
+    
+            var marker_682644f2e212e9e4180a63d418f00d4a = L.marker(
+                [-7.558543900000001, 110.8206488],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_83cae332078493f1e9b017d721d40c7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_682644f2e212e9e4180a63d418f00d4a.setIcon(icon_83cae332078493f1e9b017d721d40c7b);
+        
+    
+        var popup_40d7ba015cfbf46786b9cfc6526f3127 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79c164568c32dd93ac6196a8513f73c5 = $(`<div id="html_79c164568c32dd93ac6196a8513f73c5" style="width: 100.0%; height: 100.0%;">Wedangan Mbak Endah</div>`)[0];
+                popup_40d7ba015cfbf46786b9cfc6526f3127.setContent(html_79c164568c32dd93ac6196a8513f73c5);
+            
+        
+
+        marker_682644f2e212e9e4180a63d418f00d4a.bindPopup(popup_40d7ba015cfbf46786b9cfc6526f3127)
+        ;
+
+        
+    
+    
+            var marker_5c6309b19bdb033555c4d9a180d28fb7 = L.marker(
+                [-7.562847499999998, 110.8201672],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_f341bb7e4c9548f3d77ca3b47736d333 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5c6309b19bdb033555c4d9a180d28fb7.setIcon(icon_f341bb7e4c9548f3d77ca3b47736d333);
+        
+    
+        var popup_135562bf457326c4546911ee4f9e0179 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_250c3508781a299b9422780e98838942 = $(`<div id="html_250c3508781a299b9422780e98838942" style="width: 100.0%; height: 100.0%;">Joseline</div>`)[0];
+                popup_135562bf457326c4546911ee4f9e0179.setContent(html_250c3508781a299b9422780e98838942);
+            
+        
+
+        marker_5c6309b19bdb033555c4d9a180d28fb7.bindPopup(popup_135562bf457326c4546911ee4f9e0179)
+        ;
+
+        
+    
+    
+            var marker_47fe03d115d2a8a50d8e0f5204a1a590 = L.marker(
+                [-7.5623737, 110.81925],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_7bd99ffe5e31859935cc92df979a5001 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_47fe03d115d2a8a50d8e0f5204a1a590.setIcon(icon_7bd99ffe5e31859935cc92df979a5001);
+        
+    
+        var popup_afb81ddca1c582f6d044305825ed6059 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eab814d97b824bfc3be2b7219317e252 = $(`<div id="html_eab814d97b824bfc3be2b7219317e252" style="width: 100.0%; height: 100.0%;">Eko Pit</div>`)[0];
+                popup_afb81ddca1c582f6d044305825ed6059.setContent(html_eab814d97b824bfc3be2b7219317e252);
+            
+        
+
+        marker_47fe03d115d2a8a50d8e0f5204a1a590.bindPopup(popup_afb81ddca1c582f6d044305825ed6059)
+        ;
+
+        
+    
+    
+            var marker_97910b6e9dc95d6436dd7a0f693982cd = L.marker(
+                [-7.561150899999998, 110.8196281],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_67ba92d104b5f82e5128d5d4640a98cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_97910b6e9dc95d6436dd7a0f693982cd.setIcon(icon_67ba92d104b5f82e5128d5d4640a98cf);
+        
+    
+        var popup_d0db925958b3407f2b0d3a35060fc348 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5dbf0a2295b1cafc7a0be6bf7a0862a6 = $(`<div id="html_5dbf0a2295b1cafc7a0be6bf7a0862a6" style="width: 100.0%; height: 100.0%;">Wonder Bakery Solo</div>`)[0];
+                popup_d0db925958b3407f2b0d3a35060fc348.setContent(html_5dbf0a2295b1cafc7a0be6bf7a0862a6);
+            
+        
+
+        marker_97910b6e9dc95d6436dd7a0f693982cd.bindPopup(popup_d0db925958b3407f2b0d3a35060fc348)
+        ;
+
+        
+    
+    
+            var marker_51fae388f0af06af1ce553f0c2356c29 = L.marker(
+                [-7.563326200000001, 110.8207619],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_3e2e909e4a8eca3fc849ba466bac5127 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_51fae388f0af06af1ce553f0c2356c29.setIcon(icon_3e2e909e4a8eca3fc849ba466bac5127);
+        
+    
+        var popup_a306e8235c20c796a6cff4c4b9ed189e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35de4f34228f3e90a6c7179500c4ffbc = $(`<div id="html_35de4f34228f3e90a6c7179500c4ffbc" style="width: 100.0%; height: 100.0%;">Dealer Resmi Nova Motor</div>`)[0];
+                popup_a306e8235c20c796a6cff4c4b9ed189e.setContent(html_35de4f34228f3e90a6c7179500c4ffbc);
+            
+        
+
+        marker_51fae388f0af06af1ce553f0c2356c29.bindPopup(popup_a306e8235c20c796a6cff4c4b9ed189e)
+        ;
+
+        
+    
+    
+            var marker_f3d8861f8ffa85e7a00802fb01ab89cd = L.marker(
+                [-7.560785099999999, 110.8197751],
+                {}
+            ).addTo(map_e4c7bcadaeb2f12fd78f7df7b6e1d147);
+        
+    
+            var icon_d4a4280c7688fdefb8a82adf863ad1fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f3d8861f8ffa85e7a00802fb01ab89cd.setIcon(icon_d4a4280c7688fdefb8a82adf863ad1fe);
+        
+    
+        var popup_5aa9b96fe7a9acffbce09d7aed74b8de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84572d97f4c74b964ebb6bfd100b26cd = $(`<div id="html_84572d97f4c74b964ebb6bfd100b26cd" style="width: 100.0%; height: 100.0%;">ZOYA SOLO</div>`)[0];
+                popup_5aa9b96fe7a9acffbce09d7aed74b8de.setContent(html_84572d97f4c74b964ebb6bfd100b26cd);
+            
+        
+
+        marker_f3d8861f8ffa85e7a00802fb01ab89cd.bindPopup(popup_5aa9b96fe7a9acffbce09d7aed74b8de)
+        ;
+
+        
+    
+</script>
+</html>
